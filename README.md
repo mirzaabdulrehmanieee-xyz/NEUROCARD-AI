@@ -59,7 +59,27 @@ The original training dataset was divided into training and validation sets usin
 Signal values in the training dataset range from 0.0 to 1.0.
 
 ---
+### Dataset Download and Setup
 
+The dataset CSV files are not included in this GitHub repository because of their large file size.
+
+To run the project, download the MIT-BIH heartbeat dataset files used in this project and place them inside the `data/` directory.
+
+The following files are required:
+
+- `mitbih_train.csv`
+- `mitbih_test.csv`
+
+**Required Directory Structure:**
+
+```text
+NEUROCARD-AI/
+└── data/
+    ├── mitbih_train.csv
+    └── mitbih_test.csv
+```
+
+**Important:** Make sure both CSV files are placed in the correct `data/` directory before running the data loading, training, or evaluation scripts.
 ## 3. Neural Network Architecture
 
 The project implements a fully connected neural network named **ECGNet**.
